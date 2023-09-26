@@ -38,6 +38,7 @@ class(colData) <- "data.frame"
 #                                 ~Line + Treatment + Line:Treatment ) %>%
 #        DESeq(.) %>%
 #        estimateSizeFactors(.)
+samples <- colData
 save(list = c("counts","samples"),
      file = "hypoxia.RData")
 resaveRdaFiles("hypoxia.RData")
